@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x:hidden;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg,#8EC5 FC 0%,#E0C3 FC 100%);
+}
+.navcontainer{
+    width: 100vw;
+    min-height: 70px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 11%, rgba(4,132,202,1) 64%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+nav{
+    width: 100%;
+}
+#navitems{
+    display: flex;
+    gap: 30px;
+}
+#navlist{
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style: none;
+    font-size: 2.0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#navlogo{
+    font-size: 2.8rem;
+    color: white;
+}
+a{
+    text-decoration:none;
+    color: azure;
+}
+.ingbox{
+    font-size: 1.3rem;
+}
+.recbox{
+    font-size: 1.1rem;
+}
+.contentbox{
+    background-color: #c0dcf7;
+    background-image: linear-gradient(62deg,#8EC5 FC 0%,#E0C3 FC 100%);
+    /* border: 1px solid black; */
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightbox img{
+    height: 250px;
+    border-radius: 20px;
+    transition: all 0.3s linear 0s;
+}
+.rightbox{
+    position: relative;
+    transition: all 0.3s linear 0s;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+}
+.rightbox:hover{
+    transform: scale(1.12);
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(36, 34, 34,0.713);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+.rightbox .overlay span{
+    font-size: 1.2rem;
+    color: white;
+}
+.leftbox h2{
+    font-size: 2rem;
+}
+.footerbox{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 11%, rgba(4,132,202,1) 64%, rgba(0,212,255,1) 100%);
+    color: azure;
+    text-align: center;
+    min-height: 40px;
+    font-size: 2rem;
+}
